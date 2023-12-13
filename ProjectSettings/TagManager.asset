@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - trampolina
+  - player
+  - enemyZoneBorder
+  - PlatformBorder
+  - Projectile
+  - Enemy
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Background
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - FakeGround
+  - 
+  - 
+  - 
+  - 
+  - Object
+  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2513849097
+    locked: 0
+  - name: Terrain
+    uniqueID: 2825463751
+    locked: 0
+  - name: Trap
+    uniqueID: 2089126519
+    locked: 0
+  - name: Player
+    uniqueID: 3177441587
+    locked: 0
+  - name: Enemy
+    uniqueID: 1268071201
+    locked: 0
+  - name: Object
+    uniqueID: 1157494989
+    locked: 0
+  - name: Projectile
+    uniqueID: 855302699
+    locked: 0
