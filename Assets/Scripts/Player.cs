@@ -13,7 +13,6 @@ public class Player : MonoBehaviour
     public LayerMask WhatIsGround;
     private bool grouned;
     private bool doubleJump;
-    public float launchForce = 0;
     public bool facingRight = true;
     Rigidbody2D rgdBody;
     Animator anim;
@@ -55,7 +54,6 @@ public class Player : MonoBehaviour
         }
         if(!grouned)
         {
-            launchForce = -1*(rgdBody.velocity.y);
             if (rgdBody.velocity.y < 0)
             {
                 anim.SetBool("falling", true);
@@ -115,18 +113,6 @@ public class Player : MonoBehaviour
     void Jump()
     {
         rgdBody.velocity = new Vector2 (rgdBody.velocity.x, jumpHeight);         
-    }
-
-    void OnCollisionEnter2D(Collision2D kolider)
-    {    
-        if (kolider.gameObject.tag == "trampolina")
-        {                       
-            rgdBody.velocity = new Vector2 (0, launchForce);            
-        }
-        else
-        {
-            launchForce = (rgdBody.velocity.y) * -1;
-        }
     }
 
     public void RestartHero()
